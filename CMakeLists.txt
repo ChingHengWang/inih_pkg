@@ -131,11 +131,11 @@ include_directories(
 # add_executable(inih_pkg_node src/inih_pkg_node.cpp)
 
 file(GLOB_RECURSE SRCS
-    "*.cpp"
-	"*.c"
+	"lib/*.cpp"
+	"lib/*.c"
 )
 file(GLOB_RECURSE HDRS
-    "*.h"
+	"lib/*.h"
 )
 
 add_executable(pub_ini src/pub_ini.cpp ${SRCS} ${HDRS})
